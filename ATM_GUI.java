@@ -121,7 +121,6 @@ public class ATM_GUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null, "Balance: " + balance);
-                displayThankYouMessage();
             }
         });
 
@@ -140,7 +139,6 @@ public class ATM_GUI {
                         miniStmt.put((double) amount, "Amount Withdrawn");
                     }
                 }
-                displayThankYouMessage();
             }
         });
 
@@ -155,7 +153,6 @@ public class ATM_GUI {
                     updateBalanceLabel();
                     miniStmt.put((double) amount, "Amount Deposited");
                 }
-                displayThankYouMessage();
             }
         });
 
